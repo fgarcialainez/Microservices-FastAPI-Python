@@ -1,2 +1,2 @@
-# Run the movie_service
+# Run the movie-service
 uvicorn app.main:app --reload

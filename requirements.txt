@@ -1,0 +1,7 @@
+asyncpg
+databases[postgresql]~=0.5.5
+fastapi~=0.74.1
+psycopg2-binary
+pydantic~=1.9.0
+uvicorn
+SQLAlchemy~=1.4.31
