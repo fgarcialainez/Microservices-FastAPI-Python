@@ -1,4 +1,4 @@
-""" This module holds all the models available in the service. """
+""" This module holds all the models available in the movie service. """
 from pydantic import BaseModel
 from typing import List, Optional
 
