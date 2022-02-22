@@ -1,0 +1,73 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyMethodMayBeStaticInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="slugify" />
+            <item index="1" class="java.lang.String" itemvalue="azure" />
+            <item index="2" class="java.lang.String" itemvalue="fpdf" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E402" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N812" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pika-stubs==0.1.3" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="core.models.insights.BrandInsight.campaigns" />
+          <option value="django.db.models.fields.related.ForeignKey.id" />
+          <option value="django.db.models.fields.related.ForeignKey.email" />
+          <option value="core.models.brands.Brand.audiences" />
+          <option value="core.models.brands.Brand.territories" />
+          <option value="core.models.products.BrandProduct.attributes" />
+          <option value="core.models.oauth.RestrictedApplication.objects" />
+          <option value="oauth2_provider.models.AccessToken.objects" />
+          <option value="object.get_queryset" />
+          <option value="core.views.BrandQueryFilteringMixin.action" />
+          <option value="core.views.BrandQueryFilteringMixin.request" />
+          <option value="core.views.BrandQueryOptionalFilteringMixin.request" />
+          <option value="core.views.BrandQueryOptFilteringMixin.request" />
+          <option value="core.models.users.Organization.brands" />
+          <option value="core.mixins.BrandQueryFilteringMixin.action" />
+          <option value="core.mixins.BrandQueryFilteringMixin.request" />
+          <option value="core.mixins.BrandQueryOptFilteringMixin.request" />
+          <option value="core.models.insights.BrandMediumInsight.campaigns" />
+          <option value="dict.items" />
+          <option value="smart_selects.db_fields.ChainedManyToManyField.all" />
+          <option value="core.models.insights.BrandInsight.contents" />
+          <option value="core.models.insights.BrandMediumInsight.contents" />
+          <option value="django.db.models.fields.related.ForeignKey.title" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
