@@ -1,3 +1,4 @@
+""" This module holds the entry point of the movie-service. """
 from fastapi import FastAPI
 from app.api.movies import movies
 from app.api.db import metadata, database, engine
@@ -18,5 +19,5 @@ async def startup():
 async def shutdown():
     await database.disconnect()
 
-
-app.include_router(movies)
+# Register the router
+app.include_router(movies, prefix='/api/v1/movies', tags=['movies'])

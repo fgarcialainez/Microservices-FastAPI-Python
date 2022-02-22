@@ -1,7 +1,12 @@
-from sqlalchemy import (Column, Integer, MetaData, String, Table, create_engine, ARRAY)
+""" This module handles the connection with the db. """
+import os
+
+from sqlalchemy import (Column, Integer, MetaData, String, Table,
+                        create_engine, ARRAY)
 from databases import Database
 
-DATABASE_URL = 'postgresql://postgres:postgres@localhost/movie-db'
+DATABASE_URL = os.getenv('DATABASE_URL',
+                         'postgresql://postgres:postgres@localhost/movie-db')
 
 engine = create_engine(DATABASE_URL)
 metadata = MetaData()
@@ -13,7 +18,7 @@ movies = Table(
     Column('name', String(50)),
     Column('plot', String(250)),
     Column('genres', ARRAY(String)),
-    Column('casts', ARRAY(String))
+    Column('casts_id', ARRAY(Integer))
 )
 
 database = Database(DATABASE_URL)

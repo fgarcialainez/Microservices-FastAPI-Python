@@ -1,5 +1,6 @@
-from app.api.models import MovieIn, MovieOut, MovieUpdate
+""" This module handles the connections between the endpoints and the db. """
 from app.api.db import movies, database
+from app.api.models import MovieIn
 
 
 async def add_movie(payload: MovieIn):
