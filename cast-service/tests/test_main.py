@@ -1,11 +1,12 @@
-""" This module holds a basic test suite for all the cast service endpoints"""
+""" This module holds a basic test suite for all the cast-service endpoints"""
 import pytest
 from fastapi.testclient import TestClient
 from app.main import app
 
-# Insntantiate the API client
+
 @pytest.fixture
 def client():
+    # Insntantiate the API client (waiting for DB)
     with TestClient(app) as c:
         yield c
 
@@ -46,7 +47,7 @@ def test_get_cast(client):
     cast_id = response.json()['id']
 
     # Fetch the cast
-    response = client.get("/api/v1/casts/" + str(cast_id))
+    response = client.get(f'/api/v1/casts/{str(cast_id)}')
 
     # Check the response data
     assert response.status_code == 200

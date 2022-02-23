@@ -58,7 +58,7 @@ async def update_movie(id: int, payload: MovieUpdate):
     return await db_manager.update_movie(id, updated_movie)
 
 
-@movies.delete('/{id}', response_model=None)
+@movies.delete('/{id}/', status_code=204, response_model=None)
 async def delete_movie(id: int):
     movie = await db_manager.get_movie(id)
     if not movie:
